@@ -4,15 +4,15 @@
 STUDENT_NAME="ADARSH PATEL"
 SOFTWARE_CHOICE="Python"
 
-KERNAL=$(uname -r)
-USER_NAME=$(whoami)
-UPTIME=$(uptime -p)
-DATE=$(date)
-HOME_DIR=$HOME
+KERNAL=$(uname -r)       #gets current kernal version
+USER_NAME=$(whoami)      #gets logged-in usrname
+UPTIME=$(uptime -p)      #gets system uptime
+DATE=$(date)             #gets current date and time
+HOME_DIR=$HOME           #built in var for directory path
 DISTRO=$(lsb_release -d 2>/dev/null | cu -f2)
 
 echo "==============================="
-echo " open Source Audit -$STUDENT_NAAME"
+echo " open Source Audit -$STUDENT_NAME"
 echo "==============================="
 echo "Software : $SOFTWARE_CHOICE"
 echo "Kernal   : $KERNAL"
